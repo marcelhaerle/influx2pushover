@@ -8,8 +8,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 const pushover = new Push({
-    user: 'ubiuxv1jh5xzg1pr11kcz7suo5veob',
-    token: 'aeecm1fxisiqh1prtbd1eetyqejzcy'
+    user: process.env.PUSHOVER_USER,
+    token: process.env.PUSHOVER_TOKEN
 });
 
 app.post('/', (req, res) => {
