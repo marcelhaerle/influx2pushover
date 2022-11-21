@@ -1,0 +1,15 @@
+{
+  "name": "influx2pushover",
+  "version": "1.0.0",
+  "description": "Forwards InfluxDB alerts to Pushover",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Marcel Härle <marcel.haerle@sonnvest.de>",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
+    "pushover-notifications": "^1.2.2"
+  }
+}
